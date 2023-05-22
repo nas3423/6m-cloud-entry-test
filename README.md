@@ -105,8 +105,8 @@ D - The principle of performance is not applied.
 *Q5B: What do you suggest could be done to improve the situation?*
 
 ```
-He should do a review and adopt best programming practices for his code to faciliate troubleshooting.
-He should also use tools to test the web app's performance to identify for any app infrastructure issues like load distribution.
+He should do a review and adopt best programming practices for his code to faciliate troubleshooting and debugging.
+He should also use tools to test the web app's performance to identify for any app infrastructure issues like load distribution before publishing the revised code.
 ```
 
 ---
