@@ -44,7 +44,7 @@ What is the Bash command to discover the IP Address of `www.skillsunion.com`?
 What is the command to copy a directory from `~/my_project` to `/etc/projects`?
 
 ```sh
-# Answer here
+# cp -r ~/my_project /etc/projects
 ```
 ---
 
@@ -55,7 +55,17 @@ Implement a bash script that does the follow:
 1. Loop through the array and print each element.
 
 ```sh
-# Answer here
+# IN="one,two,three"
+
+OIFS=$IFS
+IFS=','
+mails2=$IN
+for x in $mails2
+do
+    echo ">[$x]"
+done
+
+IFS=$OIFS
 ```
 
 ---
@@ -72,13 +82,17 @@ Use [draw.io](draw.io) to draw a system architecture diagram as described below:
 
 Share the link to your image of diagram.
 
+[https://github.com/nas3423/6m-cloud-entry-test/blob/main/Untitled%20Diagram.drawio](https://github.com/nas3423/6m-cloud-entry-test/blob/main/Q4%20System%20Architecture.png)
+
+
+
 ---
 
 **Question 5 - System Error Management**
 
 Alan has deployed his web application to Amazon Web Service. Unfortunately, the web application encountered errors as complained by the customers (public users). Whenever there is a complaint, Alan would take a long time to trace the issue and get back to the customers. 
 
-*Q5A: Which of the following described the scenario given?*
+*Q5A: Which of the following described the scenario given?Answer: D* 
 
 A - The principle of security is not applied.
 
@@ -91,7 +105,8 @@ D - The principle of performance is not applied.
 *Q5B: What do you suggest could be done to improve the situation?*
 
 ```
-Answer here
+He should do a review and adopt best programming practices for his code to faciliate troubleshooting.
+He should also use tools to test the web app's performance to identify for any app infrastructure issues like load distribution.
 ```
 
 ---
